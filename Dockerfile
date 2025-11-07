@@ -1,7 +1,9 @@
-FROM alpine:latest
+FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY test2 .
+COPY server.py .
 
-CMD ["cat", "test2"]
+EXPOSE 8080
+
+CMD ["python", "server.py"]
