@@ -1,4 +1,4 @@
-kname: Test Flask app
+name: Test Flask app
 
 on:
   push:
